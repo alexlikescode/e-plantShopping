@@ -254,7 +254,7 @@ function ProductList({ onHomeClick }) {
         setShowCart(false);
     };
 
-    const handleAddtoCart = (product) => {
+    const handleAddToCart = (product) => {
         dispatch(addItem(product));
         setAddedToCart((prevState) => ({
             ...prevState,
