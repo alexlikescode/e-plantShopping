@@ -11,7 +11,7 @@ function ProductList({ onHomeClick }) {
     const [addedToCart, setAddedToCart] = useState({});
     const totalQuantity = useSelector(state => state.cart.totalQuantity);
     const [totalCartQuantity, setTotalCartQuantity] = useState(0);
-    const cartQuantity = useSelector(store => store.cart.cartItems);
+    const cartQuantity = useSelector(store => store.cart.items);
         useEffect(() => {
             let total = 0;
             cartQuantity.forEach(item => total += item.quantity);
