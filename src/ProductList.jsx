@@ -300,11 +300,11 @@ function ProductList({ onHomeClick }) {
                                 fontWeight: 'bold',
                                 marginLeft: '-10px'
                             }}>
-                                {totalQuantity}
+                                <p>6</p>{totalQuantity}
                             </span>
                         )}</h1></a>
                         </div>
-                        <div><p>6</p></div>
+                        
                         </div>
                         </div>
             {!showCart ? (
