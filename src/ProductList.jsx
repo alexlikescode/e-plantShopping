@@ -302,8 +302,9 @@ function ProductList({ onHomeClick }) {
                             }}>
                                 {totalQuantity}
                             </span>
-                        )}</h1></a></div>
-            </div>
+                        )}</h1></a>
+                        </div>
+            
             {!showCart ? (
                 <div className="product-grid">
                     {plantsArray.map((category,index) => (
