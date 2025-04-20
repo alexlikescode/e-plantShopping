@@ -299,7 +299,7 @@ function ProductList({ onHomeClick }) {
                                             <p>{plant.description}</p>
                                             <p>{plant.cost}</p>
                                         {/*Similarly like the above plant.name show other details like description and cost*/}
-                                        <button  className="product-button" onClick={() => handleAddToCart(plant)}>Add to Cart</button>
+                                        <button style={{backgroundColor:alreadyInCart(plant.name)?"gray":"#615EFC"}} disabled={alreadyInCart(plant.name)? true:false} className="product-button" onClick={() => handleAddToCart(plant)}>Add to Cart</button>
                                     </div>
                                 ))}
                             </div>
