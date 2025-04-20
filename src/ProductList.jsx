@@ -9,7 +9,10 @@ function ProductList({ onHomeClick }) {
     const [showCart, setShowCart] = useState(false);
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
     const [addedToCart, setAddedToCart] = useState({});
-    
+    //const alreadyInCart = (itemName) => {
+    //    return cartItems.some((item) => item.name === itemName);
+    //}
+
     const plantsArray = [
         {
             category: "Air Purifying Plants",
@@ -299,7 +302,7 @@ function ProductList({ onHomeClick }) {
                                             <p>{plant.description}</p>
                                             <p>{plant.cost}</p>
                                         {/*Similarly like the above plant.name show other details like description and cost*/}
-                                        <button style={{backgroundColor:alreadyInCart(plant.name)?"gray":"#615EFC"}} disabled={alreadyInCart(plant.name)? true:false} className="product-button" onClick={() => handleAddToCart(plant)}>Add to Cart</button>
+                                        <button style={{backgroundColor:addedToCart(plant.name)?"gray":"#615EFC"}} disabled={addedToCart(plant.name)? true:false} className="product-button" onClick={() => handleAddToCart(plant)}>Add to Cart</button>
                                     </div>
                                 ))}
                             </div>
