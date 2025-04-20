@@ -10,6 +10,7 @@ function ProductList({ onHomeClick }) {
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
     const [addedToCart, setAddedToCart] = useState({});
     const totalQuantity = useSelector(state => state.cart.totalQuantity);
+    const [totalCartQuantity, setTotalCartQuantity] = useState(0);
     const cartQuantity = useSelector(store => store.cart.cartItems);
         useEffect(() => {
             let total = 0;
